@@ -6,12 +6,21 @@
 
 /* General settings for webpage */
 body {
-    color: #960606; /* Dark gray */
-    background-color: #EEEEEE; /* Light gray */
+    color: #1e1e1e; /* Dark gray */
+    background-color: #b5b5b5; /* Light gray */
 }
+
+footer {
+    background-color: #ffffff; /* Light gray */
+    padding: 15px;
+  }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: "Arial", sans-serif;
+}
+
+h1 {
+    font-size: 10vw;
 }
 
 ul {
@@ -23,7 +32,7 @@ ol {
 }
 
 a {
-    text-decoration: none;
+
 }
 
 p {
@@ -38,9 +47,37 @@ p {
     flex-direction: column;
 }
 
+#header-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#pokeball-container {
+    width: 30%;
+}
+
+#pokeball {
+    width: 100%;
+}
+
+#header-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+#footer-text {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
 /* Mobile Styles */
 @media only screen and (max-width: 600px) {
-    
+
 }
 
 /* Tablet Styles */
@@ -50,8 +87,18 @@ p {
 
 /* Desktop Styles */
 @media only screen and (min-width: 891px) {
+    h1 {
+        font-size: 4em;
+    }
     /* Set desktop to fixed-width as opposed to fluid */
     #page {
+        width: 890px; 
+        margin: 0 auto;
+    }
+    #header-container {
+        justify-content: space-evenly;
+    }
+    #footer-text {
         width: 890px; 
         margin: 0 auto;
     }
