@@ -31,8 +31,8 @@ ol {
     list-style-type: lower-alpha;
 }
 
-a {
-
+a:visited {
+    color: #fe1c1d;
 }
 
 p {
