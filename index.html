@@ -10,11 +10,27 @@
     
     <!--Basic HTML Content-->
     <div id="page">
+        <!--Header-->
         <div id="header-container">
             <div id="pokeball-container"><img src="https://upload.wikimedia.org/wikipedia/commons/3/39/Pokeball.PNG" alt="pokeball" id="pokeball"></div>
             <div id="header-text"><h1>JavaScript</h1><h1>PokeDex</h1></div>
         </div>
-
+        <!--Empty Pokedex-->
+        <div id="pokedex">
+            <div id="pokemon-img"><img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/Question_mk_grey.png" alt="unknown-pokemon" id="pokemon-sprite"></div>
+            <div id="pokemon-info">
+                <div id="pokemon-name">
+                    <form>
+                        <label>Pokemon Name:</label>
+                        <input id="name-input" type="text"></input>
+                        <input id="name-submit" type="submit" value="Submit"></input>
+                   </form> 
+                </div>
+                <div id="pokemon-type"></div>
+                <div id="pokemon-stats"></div>
+                <div id="pokemon-number"></div>
+            </div>
+        </div>
         
     </div>
 
@@ -22,8 +38,9 @@
     <!--Footer-->
     <footer>
         <div id="footer-text">
-            <p>Author: Beckett Ricks</p>
-            <p>Pokeball image: <a href="https://commons.wikimedia.org/wiki/File:Pokeball.PNG">DarknessLord</a>, Public domain, via Wikimedia Commonse</p>
+            <p>Author: Beckett Ricks</p><br>
+            <p>Pokeball image: <a href="https://commons.wikimedia.org/wiki/File:Pokeball.PNG">DarknessLord</a>, Public domain, via Wikimedia Commons</p><br>
+            <p>Question mark image:<a href="https://commons.wikimedia.org/wiki/File:Question_mk_grey.png">TSkaff</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>, via Wikimedia Commons</p><br>
             <p>PokeDex Code can be found in <a href="https://github.com/ricksy7745/CS260-creative-project-2">this GitHub repo.</a></p>
         </div>
     </footer>
