@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General settings for webpage */
+body {
+    color: #960606; /* Dark gray */
+    background-color: #EEEEEE; /* Light gray */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Arial", sans-serif;
+}
+
+ul {
+    list-style-type: circle;
+}
+
+ol {
+    list-style-type: lower-alpha;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    font-family: "Helvetica", "Arial", sans-serif;
+    text-align: left;
+}
+
+/* Fluid display for the default mobile and tablet displays */
+#page {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 600px) {
+    
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 601px) and (max-width: 890px) {
+    
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 891px) {
+    /* Set desktop to fixed-width as opposed to fluid */
+    #page {
+        width: 890px; 
+        margin: 0 auto;
+    }
+}
